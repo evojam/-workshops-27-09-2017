@@ -1,0 +1,14 @@
+.Square {
+  float: left;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}
+
+.Square p {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 10px;
+}

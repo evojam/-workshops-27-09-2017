@@ -1,0 +1,27 @@
+{
+  "name": "example1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "immutable": "3.8.1",
+    "moize": "4.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-scripts-ts": "2.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "21.1.0",
+    "@types/node": "8.0.30",
+    "@types/react": "16.0.6",
+    "@types/react-addons-perf": "0.14.18",
+    "@types/react-dom": "15.5.4",
+    "expose-loader": "0.7.3",
+    "react-addons-perf": "15.4.2"
+  }
+}

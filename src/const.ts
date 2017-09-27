@@ -1,0 +1,1 @@
+export const INITIAL_CUBE_NUMBER = 2000
