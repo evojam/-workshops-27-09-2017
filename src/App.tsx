@@ -5,11 +5,11 @@ import { INITIAL_CUBE_NUMBER } from './const'
 
 import './App.css'
 
-import { CubeType, generateData } from './utils'
+import { SquareType, generateData } from './utils'
 
 interface State {
   timeLogs: number[],
-  data: CubeType[],
+  data: SquareType[],
   cubeNumber: number,
 }
 
@@ -43,21 +43,21 @@ class App extends React.Component<object, State> {
     );
   }
 
-  componentWillUpdate() {
+  componentWillUpdate(): void {
     this.timeLogs = Date.now()
   }
 
-  componentDidUpdate(prevProps: State, prevState: State) {
+  componentDidUpdate(prevProps: State, prevState: State): void {
     this.refreshTimes(this.state.timeLogs === prevState.timeLogs)
   }
 
-  private onRemove(id: string) {
+  private onRemove(id: string): void {
     this.setState({
       data: this.state.data.filter(cube => cube.id !== id)
     })
   }
 
-  private refreshTimes(hasTimeChanged: boolean) {
+  private refreshTimes(hasTimeChanged: boolean): void {
     if (hasTimeChanged) {
       this.setState({
         timeLogs: [Date.now() - this.timeLogs, ...this.state.timeLogs]

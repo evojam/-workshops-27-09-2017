@@ -21,7 +21,7 @@ export class Square extends React.Component<Props, object> {
     )
   }
 
-  private handleClick(id: string) {
+  private handleClick(id: string): void {
     const { onRemove } = this.props
     onRemove(id)
   }

@@ -5,12 +5,12 @@ import { Square } from '../Square'
 import './Content.css'
 
 import {
-  CubeType,
+  SquareType,
   randId,
 } from '../../utils'
 
 type Props = {
-  data: CubeType[],
+  data: SquareType[],
   onRemove: (index: string) => void,
 }
 
@@ -43,7 +43,7 @@ export class Content extends React.Component<Props, object> {
     )
   }
 
-  private onRemove(index: string) {
-    this.props.onRemove(index)
+  private onRemove(id: string): void {
+    this.props.onRemove(id)
   }
 }
